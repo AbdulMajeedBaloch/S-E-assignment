@@ -49,3 +49,34 @@ class Currency_Converter
                 System.out.println("Kuwaiti dinar : "+f.format(KWD));
             }
            
+         else if(code == 4)
+            {
+                System.out.println("Enter amount in Euro:");
+                euro = sc.nextFloat();
+                rupee = euro * 84;
+                System.out.println("Rupees : "+f.format(rupee));
+                dollar = euro * 1.12;
+                System.out.println("Dollar : "+f.format(dollar));
+                pound = euro * 0.73;
+                System.out.println("Pound : "+f.format(pound));
+                KWD = euro * 0.34;
+                System.out.println("Kuwaiti dinar : "+f.format(KWD));
+            }
+            else if(code == 5)
+            {
+                System.out.println("Enter amount in Kuwaiti dinar:");
+                KWD = sc.nextFloat();
+                rupee = KWD * 250;
+                System.out.println("Rupees : "+f.format(rupee));
+                dollar = KWD * 3.30;
+                System.out.println("Dollar : "+f.format(dollar));
+                pound = KWD * 2.5;
+                System.out.println("Pound : "+f.format(pound));
+                euro = KWD * 2.94;
+                System.out.println("Euro : "+f.format(euro));
+            }
+            else
+                System.out.println("Invalid Code!");
+    }
+}
+        
